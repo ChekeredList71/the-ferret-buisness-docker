@@ -13,18 +13,17 @@ Docker Hub: https://hub.docker.com/r/chekeredlist71/the-ferret-buisness-docker
 ```
 services:
   the-ferret-buisness-server:
-    image: image goes here
+    image: chekeredlist71/the-ferret-buisness-docker
     container_name: theferretbuisness  # optional
     ports:
       - 25565:25565
     volumes:
       - /some/path:/data
     restart: no
-    
 ```
 1\. or with Docker run:
 ```
-docker run --name theferretbuisness -p 25565:25565 -v /some/path:/data --restart no -d image-goes-here
+docker run --name theferretbuisness -p 25565:25565 -v /some/path:/data --restart no -d chekeredlist71/the-ferret-buisness-docker
 ```
 
 > Make sure, that `/some/path` is owned by the user with 1212 UID and 1212 GID (or run the container with some other user),
