@@ -9,7 +9,7 @@ Docker Hub: https://hub.docker.com/r/chekeredlist71/the-ferret-buisness-docker
 
 ## Running the server
 
-1\. with Docker compose:
+1a\. with Docker compose:
 ```
 services:
   the-ferret-buisness-server:
@@ -21,7 +21,7 @@ services:
       - /some/path:/data
     restart: no
 ```
-1\. or with Docker run:
+1b\. or with Docker run:
 ```
 docker run --name theferretbuisness -p 25565:25565 -v /some/path:/data --restart no -d chekeredlist71/the-ferret-buisness-docker
 ```
