@@ -1,5 +1,11 @@
 # The Ferret Buisness server for Docker
 
+![Docker Image Size](https://img.shields.io/docker/image-size/chekeredlist71/the-ferret-buisness-docker?style=flat&logo=docker&logoColor=%232496ED&link=https%3A%2F%2Fhub.docker.com%2Fr%2Fchekeredlist71%2Fthe-ferret-buisness-docker)
+![Docker Image Version](https://img.shields.io/docker/v/chekeredlist71/the-ferret-buisness-docker?style=flat&logo=docker&logoColor=%232496ED&color=%232496ED&link=https%3A%2F%2Fhub.docker.com%2Fr%2Fchekeredlist71%2Fthe-ferret-buisness-docker)
+![Docker Pulls](https://img.shields.io/docker/pulls/chekeredlist71/the-ferret-buisness-docker?style=flat&logo=docker&logoColor=%232496ED&color=%232496ED&link=https%3A%2F%2Fhub.docker.com%2Fr%2Fchekeredlist71%2Fthe-ferret-buisness-docker)
+![Static Badge](https://img.shields.io/badge/official_mod-logo?logo=curseforge&logoColor=%23F16436&labelColor=%23505050&color=%23F16436&link=https%3A%2F%2Fwww.curseforge.com%2Fminecraft%2Fmodpacks%2Fthe-ferret-business)
+
+
 Latest (0.4.2a) The Ferret Buisness server containerized for Docker.<br>
 Currently, this is the only working option to run TFB, because the installation script is broken, 
 [see this issue](https://github.com/CaiganMythFang/TheFerretBusinessIssues/issues/115).
