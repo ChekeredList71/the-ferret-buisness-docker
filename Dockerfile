@@ -1,6 +1,7 @@
 FROM adoptopenjdk:8-jre
 
 LABEL authors="ChekeredList71"
+LABEL org.opencontainers.image.source=https://github.com/ChekeredList71/the-ferret-buisness-docker
 
 # dependencies to download, apt cleanup
 RUN apt update && \
