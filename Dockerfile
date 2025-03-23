@@ -40,6 +40,6 @@ EXPOSE 25565
 
 ENTRYPOINT ["/start.sh"]
 
-ENV MOTD "The Ferret Buisness (0.4.2a) server on Docker"
-ENV LEVEL world
-ENV JVM_OPTS "-Xms4048m -Xmx4048m"
+ENV MOTD="The Ferret Buisness (0.4.2a) server on Docker"
+ENV LEVEL=world
+ENV JVM_OPTS="-Xms4048m -Xmx4048m"
