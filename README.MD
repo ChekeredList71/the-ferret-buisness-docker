@@ -29,7 +29,7 @@ docker run --name theferretbuisness -p 25565:25565 -v /some/path:/data --restart
 > Make sure, that `/some/path` is owned by the user with 1212 UID and 1212 GID (or run the container with some other user),
 > otherwise the bind mount won't work.
 
-2\. wait until the server start (new logs stop coming), then you should see this message:
+2\. wait until the server starts (new logs stop coming), then you should see this message:
 ```
 [xx:yy:zz] [Thread-33/INFO] [FTBU]: Loaded 0 badges in X ms!
 ```
@@ -63,12 +63,14 @@ services:
 
 You can use the following environment variables in your `docker run` command or compose file:
 
-| name       | default value                                   | used for                                                                                  |
-|:-----------|-------------------------------------------------|-------------------------------------------------------------------------------------------|
-| MOTD       | "The Ferret Buisness (0.4.2a) server on Docker" | sets the MOTD text on your server                                                         |
-| LEVEL      | word                                            | set the `level-name` parameter in `server.propeties`                                      |
-| OPS        | *none*                                          | Sets the contents of `ops.txt` based on the variable. Use it like this: `OPUser1,OPuser2` |
-| ONLINEMODE | *default in `server.propeties`*                 | sets the `online-mode` parameter in `server.propeties` (`true` or `false`)                |
+| name       | default value                                   | used for                                                                                                                                    |
+|:-----------|-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| MOTD       | "The Ferret Buisness (0.4.2a) server on Docker" | sets the MOTD text on your server                                                                                                           |
+| LEVEL      | word                                            | set the `level-name` parameter in `server.propeties`                                                                                        |
+| OPS[^1]    | *none*                                          | Add list of OPs to `ops.txt` (that the server imports to `ops.json`, ignoring already OP users). Use it like this: `NewOPUser1,NewOPuser2`. |
+| ONLINEMODE | *default in `server.propeties`*                 | sets the `online-mode` parameter in `server.propeties` (`true` or `false`)                                                                  |
+
+[^1]: If you want to take OP right from someone, make sure to remove the player from `ops.json` too, not just from the environment variable.
 
 ## Many thanks, to...
 
